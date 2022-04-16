@@ -37,10 +37,13 @@ main {
 }
 
 .wrapper {
-	width: 1366px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.wrapper.hub-wrapper{
+	width: 1366px;
 }
 
 
@@ -78,12 +81,12 @@ a {
 	height: 76px;
 	background-color: #646F94;
 	color: white;
+	text-align: left;
 	padding: 12px 20px;
 }
 
 h1 {
 	font-size: 45px;
-
 }
 
 h3 {
@@ -106,7 +109,8 @@ h3 {
 	width: 100px;
 	height: 1px;
 	border-bottom: solid 2px #ffffffaa;
-	margin: 15px;
+	margin: 15px 0px;
+	display: inline-block;
 }
 
 .threejs-blue {
@@ -124,7 +128,7 @@ h3 {
 }
 
 @media (max-width: 1366px) {
-	.wrapper {
+	.wrapper.hub-wrapper {
 		width: 100%;
 	}
 }

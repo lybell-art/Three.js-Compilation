@@ -1,0 +1,141 @@
+#canvas {
+	width: 100vw;
+	height: 100vh;
+}
+
+.center {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.showcase-list {
+	box-sizing: border-box;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh;
+    padding: 30px 15px;
+    background-color: white;
+    transform: translate(-400px, 0px);
+    transition: transform 0.5s ease;
+}
+
+.showcase-list.show {
+	transform: translate(0px, 0px);
+}
+
+.aside-wrapper{
+	width: 370px;
+	height: 100%;
+	overflow: auto;
+	text-align: center;
+}
+
+.aside-wrapper::-webkit-scrollbar {
+	width: 10px;
+	padding: 20px 0px;
+}
+
+.aside-wrapper::-webkit-scrollbar-thumb {
+	background-color: #049EF4;
+	border-radius: 10px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+.aside-wrapper::-webkit-scrollbar-track  {
+	visibility: hidden;
+}
+
+.list-button-box {
+	position: absolute;
+    top: 25px;
+    left: 390px;
+    width: 60px;
+    height: 60px;
+    padding: 0px 10px 0px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-nav-title {
+	font-size: 36px;
+}
+
+.line.black {
+	border-color: black;
+}
+
+
+.bottom-nav {
+	position: fixed;
+	bottom: 45px;
+	pointer-events: none;
+}
+
+.bottom-nav-box {
+	width: 130px;
+	height: 50px;
+	background-color: white;
+	border-radius: 15px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: bounding-box;
+}
+
+.showcase-button {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px;
+	display: block;
+	cursor: pointer;
+}
+
+.showcase-description {
+	position: fixed;
+	bottom: 40px;
+	pointer-events: none;
+}
+
+.showcase-desc-box {
+	width: 1020px;
+	height: 300px;
+	color: white;
+	background-color: #000000aa;
+	padding: 30px 40px;
+	overflow: hidden auto;
+	pointer-events: bounding-box;
+}
+
+.showcase-desc-box::-webkit-scrollbar {
+	width: 10px;
+	padding: 20px 0px;
+}
+
+.showcase-desc-box::-webkit-scrollbar-thumb {
+	background-color: #ffffff80;
+	border-radius: 10px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+.showcase-desc-box::-webkit-scrollbar-track  {
+	visibility: hidden;
+}
+
+.description.medium {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
