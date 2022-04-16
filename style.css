@@ -1,0 +1,151 @@
+body {
+	background-color: #373940;
+	margin: 0px;
+}
+
+h1, h3, p{
+	margin: 0px;
+	font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+.watermark {
+	position: fixed;
+	width: 600px;
+	height: 600px;
+	opacity: 0.2;
+	bottom: -100px;
+	right: -100px;
+	z-index: -100;
+}
+
+header {
+	width: 100%;
+	height: 240px;
+	margin: 0px;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper {
+	width: 1366px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.project {
+	width: 384px;
+	height: 340px;
+	margin: 12px 16px;
+	box-shadow: 8px 8px #00000024;
+	transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project:hover{
+	transform: scale(1.04);
+}
+
+.thumbnail {
+	width: 100%;
+	height: 240px;
+	display: block;
+	background-position: center;
+	background-size: 40%;
+	background-repeat: no-repeat;
+}
+
+.threejs-placeholder {
+	background-image: url(assets/threejs-ico.svg);
+	background-color: #049ef4;
+}
+
+.description-box {
+	height: 76px;
+	background-color: #646F94;
+	color: white;
+	padding: 12px 20px;
+}
+
+h1 {
+	font-size: 45px;
+
+}
+
+h3 {
+	margin-bottom: 8px;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.subtitle-desc {
+	font-size: 16px;
+	color: #ffffffcc;
+}
+
+.description {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.line {
+	width: 100px;
+	height: 1px;
+	border-bottom: solid 2px #ffffffaa;
+	margin: 15px;
+}
+
+.threejs-blue {
+	color: #049EF4;
+}
+
+.project.additional {
+	animation: smoothShow 0.8s ease-out;
+	animation-iteration-count : 1;
+}
+
+#nextLoader {
+	width: 100%;
+	height: 10px;
+}
+
+@media (max-width: 1366px) {
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes smoothShow {
+	0% {
+		opacity: 0;
+		transform: translate(-50px, 0px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+@keyframes smoothShow {
+	0% {
+		opacity: 0;
+		transform: translate(-50px, 0px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
