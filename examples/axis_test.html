@@ -10,14 +10,14 @@
 </head>
 <body>
 	<div id="canvas"></div>
-	<aside class="showcase-list show">
-		<div class="list-button-box">
-			<img id="list-button" class="showcase-button" src="../assets/more-ico.svg">
+	<aside class="showcase-list">
+		<div id="list-button" class="list-button-box">
+			<img class="showcase-button" src="../assets/more-ico.svg">
 		</div>
 		<div class="aside-wrapper">
 			<h1 class="list-nav-title"><span class="threejs-blue">Three.js</span><br />Compilation</h1>
 			<div class="line black"></div>
-			<div class="wrapper">
+			<div id="aside-contents" class="wrapper">
 				<div class="project">
 					<a href="/examples/axis_test.html">
 						<img class="thumbnail" src="/thumbs/axis_test.png" />
@@ -45,10 +45,11 @@
 						</div>
 					</a>
 				</div>
+				<!-- 3개까지 기본 로딩 -->
 			</div>
 		</div>
 	</aside>
-	<nav class="bottom-nav center">
+	<nav class="bottom-nav center show">
 		<div class="bottom-nav-box">
 			<img id="description-button" class="showcase-button" src="../assets/desc-ico.svg">
 			<a href="https://github.com/lybell-art/Three.js-Compilation/tree/main">
@@ -56,12 +57,14 @@
 			</a>
 		</div>
 	</nav>
-	<div class="showcase-description center hidden">
+	<div class="showcase-description center">
 		<div class="showcase-desc-box">
 			<h1>Axis Test</h1>
 			<div class="line"></div>
 			<p class="description medium">Lorem ipsum dolor shit!</p>
 		</div>
 	</div>
+
+	<script type="module" src="dom.js" ></script>
 </body>
 </html>
